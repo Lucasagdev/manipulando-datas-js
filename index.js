@@ -1,17 +1,18 @@
 const dataAtual = new Date();
 
-// const umDiaDepois = new Date(dataAtual)
+const umDiaDepois = new Date(dataAtual)
 
-// umDiaDepois.setDate(dataAtual.getDate() + 1);
+umDiaDepois.setDate(dataAtual.getDate() + 1);
 
-// console.log(umDiaDepois)
+console.log(umDiaDepois)
 
-// const umMesAtras = new Date (dataAtual);
+const umMesAtras = new Date (dataAtual);
 
-// umMesAtras.setMonth(umMesAtras.getMonth() - 1);
+umMesAtras.setMonth(umMesAtras.getMonth() - 1);
 
-// console.log(umMesAtras);
+console.log(umMesAtras);
 
+const dataAtual = new Date();
 const opcoes = {
     weekday: 'long',
     year: 'numeric',
@@ -19,9 +20,9 @@ const opcoes = {
     day: 'numeric'
 }
 
-// const dataFormatada = dataAtual.toLocaleDateString('pt-BR', opcoes);
+const dataFormatada = dataAtual.toLocaleDateString('pt-BR', opcoes);
 
-// console.log(dataFormatada)
+console.log(dataFormatada)
 
 const formatador = new Intl.DateTimeFormat('pt-BR', opcoes);
 
